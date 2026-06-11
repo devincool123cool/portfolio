@@ -8,8 +8,8 @@
 }
 
 :root {
-    --primary-color: #1e3a5f;
-    --secondary-color: #2563eb;
+    --primary-color: #6b21a8;
+    --secondary-color: #a855f7;
     --accent-color: #f59e0b;
     --text-dark: #1f2937;
     --text-light: #6b7280;
@@ -498,7 +498,7 @@ html {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--secondary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.1);
 }
 
 .submit-button {
