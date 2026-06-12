@@ -101,6 +101,32 @@ html {
     justify-content: center;
 }
 
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.hero-text {
+    text-align: left;
+}
+
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
@@ -213,16 +239,43 @@ html {
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
 }
 
-.about-content h2 {
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.about-image img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.about-text h2 {
     color: var(--primary-color);
     font-size: 1.8rem;
     margin: 2rem 0 1rem 0;
     border-bottom: 3px solid var(--accent-color);
     padding-bottom: 0.5rem;
+}
+
+.about-text h2:first-child {
+    margin-top: 0;
 }
 
 .about-content p {
@@ -561,12 +614,30 @@ footer a:hover {
         font-size: 0.9rem;
     }
 
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
 
     .hero-content p {
         font-size: 1rem;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .highlights h2 {
@@ -606,6 +677,10 @@ footer a:hover {
         min-height: 300px;
     }
 
+    .hero-image img {
+        width: 200px;
+    }
+
     .highlights h2 {
         font-size: 1.5rem;
     }
@@ -618,5 +693,9 @@ footer a:hover {
 
     .resume-block h2 {
         font-size: 1.3rem;
+    }
+
+    .about-image img {
+        border-radius: 8px;
     }
 }
