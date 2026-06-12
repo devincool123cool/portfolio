@@ -167,6 +167,62 @@ html {
 }
 
 /* ===========================
+   CLOCK SECTION
+   =========================== */
+.clock-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%);
+}
+
+.clock-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.clock-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.clock-box {
+    background-color: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.15);
+    text-align: center;
+    min-width: 280px;
+    transition: var(--transition);
+    border: 2px solid var(--border-color);
+}
+
+.clock-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(124, 58, 237, 0.25);
+    border-color: var(--secondary-color);
+}
+
+.clock-time {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: 'Courier New', monospace;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.clock-label {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+/* ===========================
    HIGHLIGHTS SECTION
    =========================== */
 .highlights {
@@ -640,6 +696,15 @@ footer a:hover {
         gap: 2rem;
     }
 
+    .clock-display {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .clock-box {
+        min-width: 100%;
+    }
+
     .highlights h2 {
         font-size: 2rem;
     }
@@ -679,6 +744,18 @@ footer a:hover {
 
     .hero-image img {
         width: 200px;
+    }
+
+    .clock-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .clock-time {
+        font-size: 2rem;
+    }
+
+    .clock-label {
+        font-size: 0.95rem;
     }
 
     .highlights h2 {
